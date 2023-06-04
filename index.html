@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Manager</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Event Manager</h1>
+    <nav>
+      <ul>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#profile">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+<div id="admin-interface">
+  <h2>Welcome, <span id="admin-name"></span></h2>
+  <form id="event-form">
+    <h3>Create Event</h3>
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name" required>
+    <label for="organizer">Organizer:</label>
+    <input type="text" id="organizer" required>
+    <label for="date">Date:</label>
+    <input type="date" id="date" required>
+    <label for="venue">Venue:</label>
+    <input type="text" id="venue" required>
+    <label for="price">Price:</label>
+    <input type="text" id="price">
+    <button type="submit">Create</button>
+  </form>
+  <div id="event-list">
+    <!-- Event items will be dynamically added here -->
+  </div>
+</div>
+
+  </div>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="firebase-config.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

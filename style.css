@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.login-container,
+.signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.login-container h2,
+.signup-container h2 {
+  text-align: center;
+}
+
+.login-container label,
+.signup-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-container input,
+.signup-container input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.login-container button,
+.signup-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-container .forgot-password,
+.signup-container .login-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.events-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.events-container h2 {
+  text-align: center;
+}
+
+.event-item {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.event-actions {
+  text-align: right;
+}
+
+.event-actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.event-actions button i {
+  color: gray;
+}
+
+#admin-interface {
+  display: none;
+}
+
+#admin-interface h2 {
+  text-align: center;
+}
+
+#event-form {
+  margin-bottom: 20px;
+}
+
+#event-form label,
+#event-list label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#event-form input,
+#event-list input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#event-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#event-list .event-item {
+  position: relative;
+}
+
+.edit-btn,
+.delete-btn {
+  position: absolute;
+  top: 10px;
+}
+
+.edit-btn {
+  right: 30px;
+}
+
+.delete-btn {
+  right: 10px;
+}
